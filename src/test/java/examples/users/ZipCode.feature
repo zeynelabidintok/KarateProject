@@ -8,4 +8,5 @@ Feature: ZipCode to city data in Germany
     Given path 'DE/53343'
     When method get
     Then status 200
+    Then match response.country == 'Germany'
 
